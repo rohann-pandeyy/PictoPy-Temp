@@ -192,7 +192,7 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
         with:
           projectPath: ./frontend
-          tagName: ${{ github.ref_name }}
+          tagName: ${{ github.event.release.tag_name }}
           includeUpdaterJson: true
           releaseDraft: false
           prerelease: false
