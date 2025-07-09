@@ -1,5 +1,7 @@
 name: Build and Release App
 on:
+  release:
+    types: [published]
   workflow_dispatch: # Ability to manually trigger the workflow
 
 jobs:
@@ -192,6 +194,6 @@ jobs:
           projectPath: ./frontend
           tagName: ${{ github.ref_name }}
           includeUpdaterJson: true
-          releaseDraft: true
+          releaseDraft: false
           prerelease: false
           args: ${{ matrix.args }}
