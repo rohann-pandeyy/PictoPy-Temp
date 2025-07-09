@@ -5,12 +5,14 @@
 │   │   ├── ./.github/ISSUE_TEMPLATE/bug.yml
 │   │   ├── ./.github/ISSUE_TEMPLATE/documentation.yml
 │   │   └── ./.github/ISSUE_TEMPLATE/feature.yml
+│   ├── ./.github/release-drafter-config.yml
 │   └── ./.github/workflows
 │       ├── ./.github/workflows/build-and-release.yml
 │       ├── ./.github/workflows/docs-deploy.yml
 │       ├── ./.github/workflows/pr-check-build.yml
 │       ├── ./.github/workflows/pr-check-tests.yml
-│       └── ./.github/workflows/update-project-structure.yml
+│       ├── ./.github/workflows/update-project-structure.yml
+│       └── ./.github/workflows/update-release-drafter.yml
 ├── ./.gitignore
 ├── ./.husky
 │   └── ./.husky/pre-commit
@@ -18,6 +20,7 @@
 ├── ./CODE_OF_CONDUCT.md
 ├── ./CONTRIBUTING.md
 ├── ./README.md
+├── ./Test
 ├── ./app.py
 ├── ./backend
 │   ├── ./backend/.dockerignore
@@ -131,6 +134,7 @@
 │   │   ├── ./docs/assets/AOSSIE-logo.png
 │   │   ├── ./docs/assets/PictoPy-logo.png
 │   │   ├── ./docs/assets/backend-architecture.jpeg
+│   │   ├── ./docs/assets/favicon.png
 │   │   └── ./docs/assets/screenshots
 │   │       ├── ./docs/assets/screenshots/serverRunning.png
 │   │       └── ./docs/assets/screenshots/virtualEnv.png
@@ -233,9 +237,6 @@
 │   │   │   │   ├── ./frontend/src/components/Navigation/Navbar
 │   │   │   │   │   └── ./frontend/src/components/Navigation/Navbar/Navbar.tsx
 │   │   │   │   └── ./frontend/src/components/Navigation/Sidebar
-│   │   │   │       ├── ./frontend/src/components/Navigation/Sidebar/AvatarCropper.tsx
-│   │   │   │       ├── ./frontend/src/components/Navigation/Sidebar/CustomizationPopup.tsx
-│   │   │   │       ├── ./frontend/src/components/Navigation/Sidebar/ImageCompressor.tsx
 │   │   │   │       ├── ./frontend/src/components/Navigation/Sidebar/Sidebar.tsx
 │   │   │   │       └── ./frontend/src/components/Navigation/Sidebar/styles.ts
 │   │   │   ├── ./frontend/src/components/OnboardingSteps
@@ -438,4 +439,4 @@
 └── ./utils
     └── ./utils/cache.py
 
-101 directories, 338 files
+101 directories, 339 files
